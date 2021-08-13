@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>SignUp in the waiting list</h1>
+      </div>
+      <div class="container">
+        <form class="form" method="POST">
+          {{ form.as_p }}
+          {% csrf_token %}
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
